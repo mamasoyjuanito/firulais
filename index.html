@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firulais - API Client</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        nav { margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; }
+        nav a { margin-right: 1rem; text-decoration: none; font-weight: bold; }
+        .logo { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+        pre { background: #f4f4f4; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+        code { font-family: 'Courier New', Courier, monospace; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+    </nav>
+    <header>
+        <h1>🐾 FIRULAIS - API Client</h1>
+        <p><strong>Firulais</strong> es un cliente de API ligero, potente y moderno diseñado para desarrolladores que buscan una alternativa rápida y eficiente para probar y organizar sus peticiones HTTP. Inspirado en herramientas líderes como Postman y Bruno, Firulais ofrece una experiencia fluida con soporte nativo para los estándares de la industria.</p>
+    </header>
+    <main>
+        <section>
+            <h2>✨ Características Principales</h2>
+            <h3>📁 Organización Jerárquica</h3>
+            <p>No más listas infinitas de peticiones. Firulais permite organizar tu trabajo mediante <strong>carpetas y subcarpetas anidadas</strong>, facilitando la gestión de proyectos grandes y complejos.</p>
+            <h3>🔄 Compatibilidad Total (Bidireccional)</h3>
+            <p>Firulais actúa como un puente perfecto entre tus herramientas favoritas:</p>
+            <ul>
+                <li><strong>Importación</strong>: Soporta archivos JSON de Postman (v2.1) y exportaciones de Bruno (ZIP, archivos .bru, YAML y el nuevo estándar OpenCollection).</li>
+                <li><strong>Exportación</strong>: Lleva tus datos de vuelta a Postman o Bruno en cualquier momento con un solo clic.</li>
+            </ul>
+            <h3>🌍 Gestión de Entornos</h3>
+            <p>Gestiona variables globales y de entorno fácilmente. Cambia entre contextos (Desarrollo, QA, Producción) y Firulais sustituirá automáticamente tus variables <code>{{variable_name}}</code> en URLs, cabeceras y cuerpos de mensaje.</p>
+            <h3>🛠️ Herramientas de Desarrollador</h3>
+            <ul>
+                <li><strong>Generador de cURL</strong>: Obtén el comando cURL equivalente de cualquier petición al instante.</li>
+                <li><strong>Beautifier JSON</strong>: Formatea automáticamente tus cuerpos de petición con un solo botón.</li>
+                <li><strong>Resaltado de Sintaxis</strong>: Visualización clara de variables y resaltado de código.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>📜 El Poder de los Scripts (JavaScript Engine)</h2>
+            <p>Firulais incluye un motor de JavaScript integrado que permite automatizar tareas complejas antes y después de cada petición. Es compatible con los estándares de <strong>Bruno</strong> y <strong>Postman</strong>.</p>
+            <table>
+                <thead>
+                    <tr><th>Objeto</th><th>Descripción</th><th>Compatibilidad</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>firu</code></td><td>Nativo de Firulais. Control preciso sobre entornos y colección.</td><td>Nativo</td></tr>
+                    <tr><td><code>bru</code></td><td>Acceso a variables y entorno al estilo Bruno.</td><td>Bruno</td></tr>
+                    <tr><td><code>pm</code></td><td>Acceso a variables, entorno y tests al estilo Postman.</td><td>Postman</td></tr>
+                    <tr><td><code>res</code></td><td>Acceso rápido a los datos de la respuesta (res.body, res.status).</td><td>Bruno</td></tr>
+                    <tr><td><code>req</code></td><td>Acceso a los datos de la petición saliente.</td><td>Bruno</td></tr>
+                    <tr><td><code>console</code></td><td>Salida de mensajes a la consola integrada de Firulais.</td><td>Estándar</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2>🚀 Guía Rápida de Inicio</h2>
+            <ol>
+                <li><strong>Importar</strong>: Haz clic en el botón de descarga y selecciona tu ZIP de Bruno o JSON de Postman.</li>
+                <li><strong>Entorno</strong>: Crea un entorno en la pestaña "Entornos" y añade una variable <code>baseUrl</code>.</li>
+                <li><strong>Petición</strong>: Crea una nueva petición, pon la URL <code>{{baseUrl}}/api/status</code>.</li>
+                <li><strong>Ejecutar</strong>: Pulsa <strong>Send</strong>. Si el servidor responde un JSON, Firulais lo formateará automáticamente.</li>
+                <li><strong>Automatizar</strong>: Ve a la pestaña <strong>Scripts</strong> y empieza a codificar.</li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h2>🔒 Seguridad y Privacidad</h2>
+            <p>Firulais es <strong>offline-first</strong>. Tus datos, variables de entorno y scripts se guardan localmente en una base de datos segura. Nada se envía a servidores externos a menos que tú decidas exportar manualmente tus colecciones.</p>
+            <p>Para más detalles, consulta nuestra <a href="privacy.html">Política de Privacidad</a>.</p>
+        </section>
+        <footer>
+            <p><strong>¡Domina tus APIs con Firulais!</strong> 🐾</p>
+        </footer>
+    </main>
+</body>
+</html>
